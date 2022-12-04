@@ -1,0 +1,40 @@
+.what-do {
+    padding-top: 0;
+}
+
+.what-do-list{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.what-do-item-wrap{
+    position: relative;
+}
+
+.what-do-description{
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--clear-white);
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+}
+
+.what-do-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.what-do-title {
+    color: var(--title-color);
+}

@@ -1,0 +1,129 @@
+.header{
+    background: var(--clear-white);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-container,
+.navigation {
+    align-items: center;
+}
+
+.header-container,
+.navigation,
+.site-nav,
+.mail-tel {
+    display: flex;
+}
+
+.navigation .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* logo */
+.navigation .logo {
+    color: #000000;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.logo .logo-web {
+    color: var(--accent-color);
+}
+
+/* mail-tel */
+.mail-tel{
+    margin-left: auto;
+}
+
+.mail-tel .item + .item{
+    margin-left: 50px;
+}
+
+/* site-nav */
+.site-nav .link,
+.mail-tel .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #757575;
+}
+
+.mail-tel-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail-tel{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.site-nav .link {
+    color: var(--title-color);
+}
+
+.mail-tel-icon{
+    fill: currentColor;
+}
+
+/* при наведенні змінюється колір + фокус */
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link{
+    transition: color 250ms var(--type-of-show);
+}
+
+
+.mail-tel .link {
+    color: var(--text-color);
+}
+
+.mail-tel .link:hover,
+.mail-tel .link:focus {
+    color: var(--accent-color);
+}
+
+.mail-tel .link{
+    transition: color 250ms var(--type-of-show);
+}
+
+.site-nav .link.current{
+    color: var(--accent-color);
+}
+
+/* lined element */
+.site-nav .link.current::after{
+    content: "";
+    position: absolute;
+    background: #2196F3;
+    border-radius: 2px;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+}
+
+.site-nav .link{
+    position: relative;
+}

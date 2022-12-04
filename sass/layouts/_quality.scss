@@ -1,0 +1,36 @@
+.quality-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quality-item{
+    width: 270px;
+}
+
+.quality-icon{
+    background-color: #F5F4FA;
+    width: 270px;
+    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality-list .quality-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.quality-item-title{
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.quality-item-subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-top: 10px;
+}
