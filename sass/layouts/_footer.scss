@@ -21,7 +21,7 @@
     margin-top: 20px;
 }
 
-.address-item-mail-tel .link,
+.address-item-contact .link,
 .address-item-address .link {
     text-decoration: none;
     font-weight: 400;
@@ -35,18 +35,18 @@
     margin-bottom: 9px;
 }
 
-.address-item-mail-tel .link {
+.address-item-contact .link {
     color: rgba(255, 255, 255, 0.6);;
 }
 
-.address-item-mail-tel .link:hover,
-.address-item-mail-tel .link:focus,
+.address-item-contact .link:hover,
+.address-item-contact .link:focus,
 .address-item-address .link:hover,
 .address-item-address .link:focus {
     color: var(--accent-color);
 }
 
-.address-item-mail-tel .link,
+.address-item-contact .link,
 .address-item-address .link{
     transition: color 250ms var(--type-of-show);
 }
