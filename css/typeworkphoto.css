@@ -1,11 +1,11 @@
-.type-work-photo-list {
+.type-work-photo__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
   gap: 30px;
 }
 
-.type-work-photo-item {
+.type-work-photo__item {
   background-color: var(--clear-white);
   border: none;
   width: 370px;
@@ -13,11 +13,11 @@
 
 /* Wise choice = using %
 For instance:
-.type-work-photo-item {
+.type-work-photo__item {
     width: calc((100% - 60px) /3);}
 where 60px = 2(amount of margins = n-1) * 30px(margins)
 */
-.type-work-container {
+.type-work__container {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -26,7 +26,7 @@ where 60px = 2(amount of margins = n-1) * 30px(margins)
   border-top: none;
 }
 
-.type-work-photo-title {
+.type-work-photo__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -34,7 +34,7 @@ where 60px = 2(amount of margins = n-1) * 30px(margins)
   color: var(--title-color);
 }
 
-.type-work-photo-subtitle {
+.type-work-photo__subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -42,29 +42,29 @@ where 60px = 2(amount of margins = n-1) * 30px(margins)
   margin-top: 4px;
 }
 
-.type-work-photo-item .link {
+.type-work-photo__item .link {
   text-decoration: none;
-  /* i need it for type-work-photo-link:hover and type-work-photo-link:focus*/
+  /* i need it for type-work-photo__link:hover and type-work-photo__link:focus*/
   display: block;
 }
 
-.type-work-photo-list .type-work-photo-link:hover,
-.type-work-photo-list .type-work-photo-link:focus {
+.type-work-photo__list .type-work-photo__link:hover,
+.type-work-photo__list .type-work-photo__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.type-work-photo-list .type-work-photo-link {
+.type-work-photo__list .type-work-photo__link {
   transition: box-shadow 250ms var(--type-of-show);
 }
 
 /* hidden description */
-.type-work-photo-wrap {
+.type-work-photo__wrap {
   /* i need it for hidden description */
   position: relative;
   overflow: hidden;
 }
 
-.type-work-photo-description {
+.type-work-photo__description {
   position: absolute;
   top: 0;
   background: rgba(33, 150, 243, 0.9);
@@ -85,7 +85,7 @@ where 60px = 2(amount of margins = n-1) * 30px(margins)
   height: 100%;
 }
 
-.type-work-photo-item:hover .type-work-photo-description,
-.type-work-photo-item:focus .type-work-photo-description {
+.type-work-photo__item:hover .type-work-photo__description,
+.type-work-photo__item:focus .type-work-photo__description {
   transform: translateY(0);
 }/*# sourceMappingURL=typeworkphoto.css.map */

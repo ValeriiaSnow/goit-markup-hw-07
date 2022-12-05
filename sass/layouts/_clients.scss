@@ -1,34 +1,30 @@
-
-.clients-title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+.clients__title{
+    @include basic(700, 36px, 1.17, center, 0.03em);
     color: #212121;
 }
-.clients-list{
+
+.clients__list{
     margin-top: 50px;
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.clients-item{
+.clients__item{
     width: 170px;
     height: 92px;
 }
 
-.clients-item-icon{
-    /* padding: 16px 32px; */
+.clients__icon{
     width: 100%;
+    transition: fill 250ms var(--type-of-show);
+    .clients__link:hover &, .clients__link:focus &{
+        fill: #2196F3;
+    }
 }
 
-.clients-item-link{
+.clients__link{
     box-sizing: border-box;
-}
-
-.clients-item-link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,22 +33,8 @@
     width: 100%;
     height: 100%;
     fill: #AFB1B8;
-}
-
-.clients-item-link:hover,
-.clients-item-link:focus{
-    border-color: #2196F3;
-}
-
-.clients-item-link{
     transition: border-color 250ms var(--type-of-show);
-}
-
-.clients-item-link:hover .clients-item-icon,
-.clients-item-link:focus .clients-item-icon{
-    fill: #2196F3;
-}
-
-.clients-item-icon{
-    transition: fill 250ms var(--type-of-show);
+    &:hover, &:focus{
+        border-color: #2196F3;
+    }
 }

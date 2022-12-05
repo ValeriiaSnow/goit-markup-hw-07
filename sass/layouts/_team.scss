@@ -1,12 +1,5 @@
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-}
-
-.team-title,
-.team-item-title{
+.team__title {
+    @include basic(700, 36px, 1.17, center, 0.03em);
     color: var(--title-color);
 }
 
@@ -14,13 +7,13 @@
     background-color: #F5F4FA;
 }
 
-.team-list{
+.team__list{
     margin-top: 50px;
     display: flex;
     gap: 30px;
 }
 
-.team-item {
+.team__item {
     background-color: var(--clear-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -32,36 +25,29 @@
     padding-bottom: 30px;
 }
 
-.team-item-title,
-.team-item-subtitle{
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
+.name__subtitle{
+    @include basic(400, 16px, 1.19, center, 0.03em);
 }
 
-.team-item-title {
-    font-weight: 500;
-}
-
-.team-item-subtitle {
-    font-weight: 400;
-    margin-top: 10px;
+.name__title {
+    @include basic(500, 16px, 1.19, center, 0.03em);
+    color: var(--title-color);
 }
 
 /* social media */
-.team-social-list{
+.name__list{
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 16px;
 }
 
-.team-social-item{
+.name__item{
     width: 44px;
     height: 44px;
 }
 
-.team-social-link{
+.name__link{
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -69,26 +55,16 @@
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-}
-
-.team-social-icon{
-    fill: #AFB1B8;
-}
-
-.team-social-link:hover,
-.team-social-link:focus{
-    background-color: #2196F3;
-}
-
-.team-social-link{
     transition: background-color 250ms var(--type-of-show);
+    &:hover, &:focus{
+        background-color: #2196F3;
+    }
 }
 
-.team-social-link:hover .team-social-icon,
-.team-social-link:focus .team-social-icon{
-    fill: #FFFFFF;
-} 
-
-.team-social-icon{
+.name__icon{
+    fill: #AFB1B8;
     transition: fill 250ms var(--type-of-show);
+    .name__link:hover &, .name__link:focus &{
+        fill: #FFFFFF;
+    } 
 }

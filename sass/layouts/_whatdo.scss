@@ -2,23 +2,19 @@
     padding-top: 0;
 }
 
-.what-do-list{
+.what-do__list{
     margin-top: 50px;
     display: flex;
     gap: 30px;
 }
 
-.what-do-item-wrap{
+.what-do__wrap{
     position: relative;
 }
 
-.what-do-description{
+.what-do__description{
+    @include basic(700, 14px, 1.14, center, 0.03em);
     position: absolute;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--clear-white);
     width: 100%;
@@ -28,13 +24,10 @@
     bottom: 0;
 }
 
-.what-do-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
+.what-do__title {
+    @include basic(700, 36px, 1.17, center, 0.03em);
 }
 
-.what-do-title {
+.what-do__title {
     color: var(--title-color);
 }

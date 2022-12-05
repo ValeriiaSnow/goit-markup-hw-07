@@ -1,10 +1,9 @@
+@import './utils/hide';
 @import './base/reset';
 @import './base/common';
+@import './utils/vars';
 @import './components/container';
 @import './components/section';
-
-@import './utils/vars';
-@import './utils/hide';
 
 @import './layouts/header';
 
