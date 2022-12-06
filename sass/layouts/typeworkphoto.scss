@@ -7,7 +7,7 @@
 
 .type-work-photo__item {
     background-color: var(--clear-white);
-    border: 1px solid #EEEEEE;
+    border: none;
     width: 370px;
 }
 
@@ -19,8 +19,9 @@ where 60px = 2(amount of margins = n-1) * 30px(margins)
 */
 
 .type-work__container{
-    padding: 20px 0;
-    border: none;
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .type-work-photo__title {
